@@ -1,0 +1,77 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">If you are working and caring for someone</h1>
+
+    <p class="govuk-body">
+      If you are working and caring for someone, you may find it helpful to understand your employment rights and discuss your options and workplace policies 
+      with your employer.
+    </p>
+
+    <h2 class="govuk-heading-m">Understanding your rights and options at work</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/time-off-for-dependants" rel="noreferrer noopener" target="_blank">Time off for family and dependants</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/flexible-working" rel="noreferrer noopener" target="_blank">Flexible working</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.citizensadvice.org.uk/work/time-off-work/time-off-work-overview/" rel="noreferrer noopener" target="_blank">Learn more about taking time off work on Citizens Advice website</a>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Planning and preparing for the future</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://nationalcareers.service.gov.uk/" rel="noreferrer noopener" target="_blank">Get personalised careers advice and information from the National Careers Service</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-returning-to-work/" rel="noreferrer noopener" target="_blank">Carers UK advice and guidance on returning to work</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-leaving-work/" rel="noreferrer noopener" target="_blank">Carers UK advice and guidance on what to consider before leaving work</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/financial-support/benefits-for-carers-who-are-working-age/planning-ahead-pension-help/" rel="noreferrer noopener" target="_blank">Carers UK guidance on planning ahead and pension information</a>
+      </li>
+    </ul>
+
+    <br />
+
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Email content
+    </button>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./benefits-financial.html">Financial Support</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./other-support.html">Support for yourself</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./carer-options.html">Your options and available support for arranging care</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

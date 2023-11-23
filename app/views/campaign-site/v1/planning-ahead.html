@@ -1,0 +1,266 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <header class="govuk-header border-none" role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container govuk-header-custom">
+      <div class="govuk-header__logo">
+        <a href="#" class="govuk-header__link govuk-header__link--homepage">
+          <span class="govuk-header__logotype">
+            <!--[if gt IE 8]><!-->
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="govuk-header__logotype-crown"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 132 97"
+              height="30"
+              width="36">
+              <path
+                fill="currentColor" fill-rule="evenodd"
+                d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+            </svg>
+            <!--<![endif]-->
+            <!--[if IE 8]>
+            <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+            <![endif]-->
+            <span class="govuk-header__logotype-text">
+              GOV.UK
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="govuk-header-custom-lang">
+        <a href="#" class="govuk-link govuk-header-custom-lang-text">Cymraeg</a>
+      </div>
+    </div>
+    <div class="govuk-subheader">
+      <div class="govuk-width-container govuk-subheader-content">
+        <input class="govuk-input search-bar" placeholder="Search" id="event-name" name="event-name" type="text">
+        <div class="govuk-subheader-links">
+          <a href="./landing-page.html" class="govuk-link govuk-subheader-custom-link">Home</a>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+  <!-- Pannel 1 -->
+  <div id="pannel-1" class="background-colour">
+    <div class="govuk-width-container">
+      <h1 class="govuk-heading-xl govuk-!-padding-top-5">
+        Planning Ahead
+      </h1>
+      <div class="banner-content">
+        <div class="govuk-!-padding-right-3">
+          <p class="govuk-body">
+            You’ve recently found out your loved one needs care and support due to their health, disability or because they are an older person. You may feel overwhelmed and unsure what 
+            to do, and that’s completely normal.
+          </p>
+          <p class="govuk-body">
+            This page was created to help you make sense of the situation and take the first steps to manage it now and plan for the future. 
+          </p>
+        </div>
+        <div>
+          <img class="topic-banner-image" src="/public/images/iconOne.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pannel 2 -->
+  <div id="pannel-2">
+    <h1 class="govuk-heading-xl govuk-!-padding-top-7">
+      What are my loved one’s care needs and how might they change in the future?
+    </h1>
+    <p class="govuk-body">
+      It’s important to understand your loved one’s health, their current needs and how they can change in the future, to consider how you might support them now and going forward. 
+      Discussing these with the relevant healthcare professionals can help. Below are some things you may consider asking them: 
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>What are my loved one’s care needs and what care activities are required?</li>
+      <li>How might these needs and care activities change in the future?</li>
+      <li>How can we go about creating a care plan?</li>
+      <li>What are the different options for arranging care and what might be the best options for our situation?</li>
+    </ul>
+    <p class="govuk-body">
+      You can also find helpful information on specific health conditions on <a href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/homecare/" class="govuk-link">the NHS website</a>.
+    </p>
+    <p class="govuk-body">
+      If your loved one has a specific health condition, you may find it helpful to refer to the relevant condition charity to find information and support and learn from experiences of 
+      others in a similar position. You can search for these charities on the Internet or ask a healthcare professional to help you identify the right charity.
+    </p>
+    
+    <h1 class="govuk-heading-xl govuk-!-padding-top-7">
+      What care and support am I able to provide?
+    </h1>
+
+    <p class="govuk-body">
+      You may be facing important decisions about how to care for your loved one and thinking about what implications they will have on areas of your life like career, family, and 
+      relationships. When making these decisions, you should consider your own needs and abilities. 
+    </p>
+
+    <p class="govuk-body govuk-!-font-weight-bold">
+      We have created the acronym PREPARE to help you understand the situation.
+    </p>
+
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Proximity:</span> Do you live near the person who is experiencing health challenges? Do you live close enough to visit as often as needed?
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Resources:</span> Do you have the resources to care for your loved one?
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Emotions:</span> Many people experience complicated feelings related to their caring role. Are you able to manage this emotionally, without 
+      negatively impacting your relationship with your loved one?
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">People:</span> Have you got people you can talk to and support you in this situation?
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Ability:</span> Can you care for someone right now, in terms of your own health, strength and abilities?
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Remember:</span> to maintain relationships with loved ones, you will need their support.
+    </p>
+    <p class="govuk-body">
+      <span class="govuk-!-font-weight-bold">Employment:</span> Caring can impact your work. Are you aware of the support you can get to help you manage this? Can go to section X
+    </p>
+
+    <h1 class="govuk-heading-xl govuk-!-padding-top-7">
+      What are some first steps to take?
+    </h1>
+
+    <p class="govuk-body">
+      One of the first steps to take to help manage the situation now and start planning for the future is arranging a <span class="govuk-!-font-weight-bold">Needs Assessment</span> for your loved one for from the local council 
+      social services. This assessment will help to identify what type of support your loved one needs, how this support will be given and how the local council can help. You can 
+      arrange a needs assessment by contacting your loved one’s local council. Find our more information on the <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/help-from-social-services-and-charities/getting-a-needs-assessment/">NHS page on getting a social care needs assessment</a>.
+    </p>
+
+    <p class="govuk-body">
+      As the result of the assessment, the social services at the local council will prepare a care and support plan for your loved one and those who care for them. You can visit the 
+      <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/help-from-social-services-and-charities/care-and-support-plans/">NHS page on care and support plans</a> to learn more.
+    </p>
+
+    <p class="govuk-body">
+      Right now, you may feel overwhelmed and spending most of your time supporting and thinking about your loved one. <span class="govuk-!-font-weight-bold">Planning ahead</span> is important as it can help reduce some anxiety 
+      and help you feel more prepared to manage the situation. Carers First created a guide to help you understand what to consider in planning for the future. You can access the 
+      guide on <a class="govuk-link" href="">the Carers First website</a>.
+    </p>
+    <!-- Signpost 1 -->
+    <!-- <a class="no-style-link" href="#">
+      <div class="link-box">
+        <div class="link-box-content">
+          <h3 class="govuk-heading-m">Link 1</h3>
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            Aliquam erat volutpat. Phasellus turpis magna, rhoncus vitae mi id, finibus sodales dui. Praesent purus mi, lacinia viverra sagittis ut, dapibus vel mi.
+          </p>
+        </div>
+        <div class="link-box-link">
+          <div class="link-box-link-text">
+            <p class="govuk-body govuk-!-margin-bottom-0 govuk-!-font-weight-bold">Visit webpage (opens in a new tab)</p>
+          </div>
+          <div class="link-box-icon">
+            <img src="/public/images/signpostArrowTwo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </a> -->
+  </div>
+  <!-- Pannel 3 -->
+  <div id="pannel-3" class="background-colour">
+    <div class="govuk-width-container">
+      <h1 class="govuk-heading-xl govuk-!-padding-top-7 govuk-!-margin-bottom-7">
+        You are not alone
+      </h1>
+      <!-- Qoute 1 -->
+      <div class="user-quote-box">
+        <div class="user-quote-text">
+          <p class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-0">
+            “Right now everything is okay and I’m managing, but I’m worried about the future where things might change.”
+          </p>
+        </div>
+        <div class="user-quote-image-box">
+          <img class="user-quote-image" src="/public/images/userImage.png" alt="">
+        </div>
+      </div>
+      <!-- Qoute 2 -->
+      <div class="user-quote-box user-quote-box--reverse">
+        <div class="user-quote-text">
+          <p class="govuk-body-l govuk-!-font-weight-bold qoute-text govuk-!-margin-bottom-0">
+            “Everything happened so suddenly. I only focus on getting through each day, and it’s really hard to think about what comes next.”
+          </p>
+        </div>
+        <div class="user-quote-image-box">
+          <img class="user-quote-image" src="/public/images/userImage.png" alt="">
+        </div>
+      </div>
+      <iframe class="video-frame" src="https://www.youtube.com/embed/3MWSe4uDWtk?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!-- Pannel 4 -->
+  <div id="pannel-4">
+    <nav class="govuk-pagination govuk-pagination--block" aria-label="Pagination">
+      <!-- <div class="govuk-pagination__prev">
+        <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+          <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+            <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="govuk-pagination__link-title">Previous</span>
+            <span class="govuk-visually-hidden">:</span>
+            <span class="govuk-pagination__link-label">DESCRIPTION</span>
+        </a>
+      </div> -->
+      <div class="govuk-pagination__next">
+        <a class="govuk-link govuk-pagination__link" href="./care-support-options.html" rel="next">
+          <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+            <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+          </svg>
+          <span class="govuk-pagination__link-title">Next</span>
+          <span class="govuk-visually-hidden">:</span>
+          <span class="govuk-pagination__link-label">Care Support Options</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="govuk-footer__licence-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 483.2 195.7"
+            height="17"
+            width="41">
+            <path
+              fill="currentColor"
+              d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+          </svg>
+          <span class="govuk-footer__licence-description">
+            All content is available under the
+            <a
+              class="govuk-footer__link"
+              href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+              rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+          </span>
+        </div>
+        <div class="govuk-footer__meta-item">
+          <a
+            class="govuk-footer__link govuk-footer__copyright-logo"
+            href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+
+{% set mainClasses = "custom-main" %}

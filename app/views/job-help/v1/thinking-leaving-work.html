@@ -1,0 +1,93 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <div class="job-help-header">
+    <img class="job-help-header-image" src="/public/images/jobHelpHeaderLogo.png" alt="UK Government Icon">
+    <a href="#" class="job-help-header-text">Cymraeg</a>
+  </div>
+  <header class="job-help-subheader">
+    <div class="job-help-subheader-section">
+      <a class="no-style-link" href="./landing-page.html"><img class="job-help-subheader-image" src="/public/images/jobHelpSubHeaderLogo.png" alt="Job Help Icon"></a>
+      <input type="text" id="search" name="search" class="job-help-subheader-search" placeholder="Eg. Job Opportunities">
+      <label class="govuk-visually-hidden" for="search">
+        Search
+      </label>
+      <button class="job-help-subheader-button">
+        Search
+      </button>
+    </div>
+    <div class="job-help-subheader-section-2">
+      <a href="#" class="job-help-subheader-text">Improve my job chances</a>
+      <a href="#" class="job-help-subheader-text">Can’t work full time?</a>
+      <a href="#" class="job-help-subheader-text">Find a job</a>
+      <a href="#" class="job-help-subheader-text">Benefits and other help</a>
+    </div>
+  </header>
+  <div class="job-help-helpers-back center-content">
+    <a class="job-help-back-link" href="./help-for-helpers.html">Help For Helpers</a>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <!-- Section 1 -->
+  <div class="background-blue-five">
+    <!-- Content -->
+    <img class="job-help-topic-title-l" src="/public/images/jobHelpTopic5Title.png" alt="Tips if you’re looking for work while caring">
+  </div>
+  <!-- Section 2 -->
+  <div class="background-white-seven">
+    <div class="center-content">
+      <div>
+        <p class="job-help-text-black">
+          Whether you're looking to move jobs or return to work, there's lots of options to explore to find work that suits you. While caring you also develop many skills that are valuable to employers.
+        </p>
+        <ul class="govuk-list govuk-list--bullet job-help-text-black">
+          <li>If you’re not sure where to start with your job search, follow <a class="govuk-link" href="https://jobhelp.campaign.gov.uk/four-steps-to-finding-work/">our four easy steps to improve your chances of finding work</a> – from finding out what you’re good at, to writing your CV and onto applying for jobs.</li>
+          <li>Need to update your CV or create a new one? <a class="govuk-link" href="https://jobhelp.campaign.gov.uk/cvs-and-covering-letters/">Our CVs and covering letters page</a> can help.</li>
+          <li>
+            Getting back into work can feel like a big step to take. Explore the <a class="govuk-link" href="https://www.gov.uk/government/publications/returner-toolkit-helping-you-back-to-work/returner-toolkit-helping-you-back-to-work">GOV.UK Returner Toolkit</a> or 
+            <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-returning-to-work">identify and develop your skills and gain confidence on Carers UK</a>.
+          </li>
+          <li>If you regularly look after someone, you may be eligible for specific employment support through the <a class="govuk-link" href="https://www.gov.uk/work-health-programme">Work and Health programme</a>.</li>
+          <li>If you want to refresh your current skills, or maybe try something completely new, the <a class="govuk-link" href="https://skillsforlife.campaign.gov.uk/?_sm_au_=iVVN1W1t4rH36vvPW2MN0K7K1WVjq">Skills for Life</a> website can help you find new learning opportunities to improve your chances of finding work.</li>
+          <li>You can also search for employers who are accredited as confident in providing support for employees who look after someone. Find out more  about the <a class="govuk-link" href="https://www.gov.uk/government/publications/returner-toolkit-helping-you-back-to-work/returner-toolkit-helping-you-back-to-work">Carer Confident Employers list</a>.</li>
+          <li>Some types of work can be more flexible than others. If you’ve explored all support options in your current role but need more help, you could look at different roles to see if they’re more flexible.</li>
+          <li>If you want to build your confidence and skills, you can <a class="govuk-link" href="https://www.gov.uk/government/get-involved/take-part/volunteer">find out how to volunteer in your local community on GOV.UK</a>.</li>
+        </ul>
+        <nav class="govuk-pagination govuk-pagination--block" aria-label="Pagination">
+          <div class="govuk-pagination__prev">
+            <a class="govuk-link govuk-pagination__link" href="./financial-support.html" rel="prev">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Previous</span>
+              <span class="govuk-visually-hidden">:</span>
+              <span class="govuk-pagination__link-label">Financial support and advice</span>
+            </a>
+          </div>
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="./taking-a-break.html" rel="next">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Next</span>
+              <span class="govuk-visually-hidden">:</span>
+              <span class="govuk-pagination__link-label">If you’re thinking of taking a break from work to look after someone</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+<img class="job-help-footer" src="/public/images/jobHelpFooter.png" alt="">
+{% endblock %}
+
+{% set mainClasses = "custom-main-2" %}
+{% set containerClasses = "custom-container-2" %}

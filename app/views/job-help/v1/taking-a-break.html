@@ -1,0 +1,76 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <div class="job-help-header">
+    <img class="job-help-header-image" src="/public/images/jobHelpHeaderLogo.png" alt="UK Government Icon">
+    <a href="#" class="job-help-header-text">Cymraeg</a>
+  </div>
+  <header class="job-help-subheader">
+    <div class="job-help-subheader-section">
+      <a class="no-style-link" href="./landing-page.html"><img class="job-help-subheader-image" src="/public/images/jobHelpSubHeaderLogo.png" alt="Job Help Icon"></a>
+      <input type="text" id="search" name="search" class="job-help-subheader-search" placeholder="Eg. Job Opportunities">
+      <label class="govuk-visually-hidden" for="search">
+        Search
+      </label>
+      <button class="job-help-subheader-button">
+        Search
+      </button>
+    </div>
+    <div class="job-help-subheader-section-2">
+      <a href="#" class="job-help-subheader-text">Improve my job chances</a>
+      <a href="#" class="job-help-subheader-text">Can’t work full time?</a>
+      <a href="#" class="job-help-subheader-text">Find a job</a>
+      <a href="#" class="job-help-subheader-text">Benefits and other help</a>
+    </div>
+  </header>
+  <div class="job-help-helpers-back center-content">
+    <a class="job-help-back-link" href="./help-for-helpers.html">Help For Helpers</a>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <!-- Section 1 -->
+  <div class="background-blue-six">
+    <!-- Content -->
+    <img class="job-help-topic-title-xl" src="/public/images/jobHelpTopic6Title.png" alt="If you’re thinking of taking a break from work to look after someone">
+  </div>
+  <!-- Section 2 -->
+  <div class="background-white-eight">
+    <div class="center-content">
+      <div>
+        <p class="job-help-text-black">
+          Before making any decisions, find out what additional support could be available. Consider <a class="govuk-link" href="./support-employer.html">what support you could get from your employer</a> to help you stay in work or explore <a class="govuk-link" href="./thinking-leaving-work.html">our tips for finding a flexible new job</a> that suits you.
+        </p>
+        <p class="job-help-text-black">
+          Try to plan for any potential impacts on things like finances or pensions before you decide to leave work. Leaving work also doesn’t have to be a permanent decision. Consider how you could stay in touch with your employer to help you return to work in the future.
+        </p>
+        <p class="job-help-text-black">
+          Find out more about <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-leaving-work/">what to consider before leaving work on Carers UK</a>. For confidential advice and information, call Carers Direct on 0300 123 1053 (Monday to Friday, 9am to 8pm; Saturday and Sunday 11am to 4pm) or find other <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/help-from-social-services-and-charities/helplines-and-forums/">helplines on NHS.UK</a>.
+        </p>
+        <nav class="govuk-pagination govuk-pagination--block" aria-label="Pagination">
+          <div class="govuk-pagination__prev">
+            <a class="govuk-link govuk-pagination__link" href="./thinking-leaving-work.html" rel="prev">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Previous</span>
+              <span class="govuk-visually-hidden">:</span>
+              <span class="govuk-pagination__link-label">Tips if you’re looking for work while caring</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+<img class="job-help-footer" src="/public/images/jobHelpFooter.png" alt="">
+{% endblock %}
+
+{% set mainClasses = "custom-main-2" %}
+{% set containerClasses = "custom-container-2" %}

@@ -1,0 +1,103 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <div class="job-help-header">
+    <img class="job-help-header-image" src="/public/images/jobHelpHeaderLogo.png" alt="UK Government Icon">
+    <a href="#" class="job-help-header-text">Cymraeg</a>
+  </div>
+  <header class="job-help-subheader">
+    <div class="job-help-subheader-section">
+      <a class="no-style-link" href="./landing-page.html"><img class="job-help-subheader-image" src="/public/images/jobHelpSubHeaderLogo.png" alt="Job Help Icon"></a>
+      <input type="text" id="search" name="search" class="job-help-subheader-search" placeholder="Eg. Job Opportunities">
+      <label class="govuk-visually-hidden" for="search">
+        Search
+      </label>
+      <button class="job-help-subheader-button">
+        Search
+      </button>
+    </div>
+    <div class="job-help-subheader-section-2">
+      <a href="#" class="job-help-subheader-text">Improve my job chances</a>
+      <a href="#" class="job-help-subheader-text">Can’t work full time?</a>
+      <a href="#" class="job-help-subheader-text">Find a job</a>
+      <a href="#" class="job-help-subheader-text">Benefits and other help</a>
+    </div>
+  </header>
+  <div class="job-help-helpers-back center-content">
+    <a class="job-help-back-link" href="./help-for-helpers.html">Help For Helpers</a>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <!-- Section 1 -->
+  <div class="background-blue-five">
+    <!-- Content -->
+    <img class="job-help-topic-title" src="/public/images/jobHelpTopic1Title.png" alt="What support can I get from employers?">
+  </div>
+  <!-- Section 2 -->
+  <div class="background-white-three">
+    <div class="center-content">
+      <div>
+        <h1 class="job-help-h1">Talking to employers about support</h1>
+        <p class="job-help-text-black">
+          Deciding whether to talk to an employer about caring can be daunting. But if you do, it could benefit you both. Most employers are eager to support employees at work and may 
+          be able to provide support that you’re not aware of. You can find 
+          <a class="govuk-link" href="https://carers.org/support-for-working-carers/talking-about-your-caring-role-at-work">tips for talking about your caring role at work on Carers Trust</a>.
+        </p>
+        <p class="job-help-text-black">
+          Most types of work allow for some level of flexibility. Consider speaking to employers about what flexible options they could offer. Some types of work can allow for more flexibility 
+          than others. So, if you’ve explored all support options in your current role but need more help, you could look at different roles to see if they’re more flexible. You can get free 
+          and impartial advice about support you may expect from your employer from <a class="govuk-link" href="https://www.acas.org.uk/contact">ACAS</a> or 
+          <a class="govuk-link" href="https://www.citizensadvice.org.uk/about-us/contact-us/contact-us/contact-us/">Citizens Advice</a>.
+        </p>
+        <h1 class="job-help-h1">Support options</h1>
+        <p class="job-help-text-black">
+          Here are some options you may want to discuss with employers.
+        </p>
+        <p class="job-help-text-black">
+          <span class="govuk-!-font-weight-bold">Flexible working</span> is a way of working that suits your needs and the business needs of an employer. For example, having flexible start and 
+          finish times, or working part-time. If you’re an employee and have worked for the same employer for a continuous period of 26 weeks, you can make a statutory request for flexible 
+          working. Find out more about the 
+          <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/your-rights-in-work/requesting-flexible-working/">benefits of flexible working on Carers UK</a>.
+        </p>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/fLGDXAhfzDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="job-help-text-black">
+          <span class="govuk-!-font-weight-bold">Taking time off in emergencies</span> – if you’re an employee (no matter how long you’ve been in employment), you’re allowed to take a 
+          reasonable amount of time off work for an emergency involving someone who depends on you for care. For example, if they have a fall and are hurt, or if other care support is 
+          cancelled suddenly and you need to step in. You should discuss with your employer whether any time you take off for an emergency will be paid.
+        </p>
+        <p class="job-help-text-black">
+          Find out more about <a class="govuk-link" href="https://www.gov.uk/time-off-for-dependants">time off for family and dependants on GOV.UK</a>.
+        </p>
+        <p class="job-help-text-black">
+          <span class="govuk-!-font-weight-bold">Support networks and policies</span> – your employer may offer extra support to help you at work. For example, some employers have support 
+          groups for employees who look after someone or may agree for you to take a career break. Ask your employer what they offer and also check your employment contract and handbook.
+        </p>
+      
+        <nav class="govuk-pagination govuk-pagination--block" aria-label="Pagination">
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="./health-wellbeing.html" rel="next">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Next</span>
+              <span class="govuk-visually-hidden">:</span>
+              <span class="govuk-pagination__link-label">Support for your health and wellbeing</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+<img class="job-help-footer" src="/public/images/jobHelpFooter.png" alt="">
+{% endblock %}
+
+{% set mainClasses = "custom-main-2" %}
+{% set containerClasses = "custom-container-2" %}

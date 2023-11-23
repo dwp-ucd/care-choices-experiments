@@ -1,0 +1,100 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <div class="job-help-header">
+    <img class="job-help-header-image" src="/public/images/jobHelpHeaderLogo.png" alt="UK Government Icon">
+    <a href="#" class="job-help-header-text">Cymraeg</a>
+  </div>
+  <header class="job-help-subheader">
+    <div class="job-help-subheader-section">
+      <a class="no-style-link" href="./landing-page.html"><img class="job-help-subheader-image" src="/public/images/jobHelpSubHeaderLogo.png" alt="Job Help Icon"></a>
+      <label class="govuk-visually-hidden" for="search">
+        Search
+      </label>
+      <input type="text" id="search" name="search" class="job-help-subheader-search" placeholder="Eg. Job Opportunities">
+      <button class="job-help-subheader-button">
+        Search
+      </button>
+    </div>
+    <div class="job-help-subheader-section-2">
+      <a href="#" class="job-help-subheader-text">Improve my job chances</a>
+      <a href="#" class="job-help-subheader-text">Can’t work full time?</a>
+      <a href="#" class="job-help-subheader-text">Find a job</a>
+      <a href="#" class="job-help-subheader-text">Benefits and other help</a>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+  <!-- Section 1 -->
+  <div class="background-blue-three">
+    <div class="job-help-page2-center-content">
+      <!-- Content -->
+      <img class="job-help-page2-heading-one" src="/public/images/jobHelpPage2Title1.png" alt="Combining work and looking after someone">
+      <p class="job-help-text-white text-align-center">
+        <span class="job-help-text-white-bold">Do you have a family member, partner or friend who may need ongoing care or support with day-to-day life?</span> The ways that you support them may vary, but some examples could include:
+      </p>
+      <ul class="govuk-list govuk-list--bullet job-help-text-white">
+        <li>emotional support like help to manage anxiety or mental health</li>
+        <li>help with housework</li>
+        <li>help with moving around, washing, or eating</li>
+        <li>collecting essentials like prescriptions or food</li>
+        <li>help to manage money </li>
+      </ul>
+      <p class="job-help-text-white text-align-center">
+        Many people combine working and caring, but it can be a challenge. The care that’s needed or your situation can change, so it’s useful to think ahead and understand the range of 
+        support available. You don’t need to receive Carer’s Allowance or care for a specific number of hours for this support to help you.
+      </p>
+      <p class="job-help-text-white text-align-center">
+        As every care situation is unique, some support may not feel relevant to you right now.
+      </p>
+      <p class="job-help-text-white text-align-center">
+        We recommend saving this page as many people who care for someone find it useful having information to hand when things change.
+      </p>
+      <div class="job-help-linknav">
+        <a class="job-help-linknav-anchor no-style-link" href="./support-employer.html">
+          <span class="job-help-linknav-text">What support can I get from employers?</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+        <a class="job-help-linknav-anchor no-style-link" href="./health-wellbeing.html">
+          <span class="job-help-linknav-text">Support for your health and wellbeing</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+        <a class="job-help-linknav-anchor no-style-link" href="./caring-costs.html">
+          <span class="job-help-linknav-text">Support with caring</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+        <a class="job-help-linknav-anchor no-style-link" href="./financial-support.html">
+          <span class="job-help-linknav-text">Financial support and advice</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+        <a class="job-help-linknav-anchor no-style-link" href="./thinking-leaving-work.html">
+          <span class="job-help-linknav-text">Tips if you’re looking for work while caring</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+        <a class="job-help-linknav-anchor no-style-link" href="./taking-a-break.html">
+          <span class="job-help-linknav-text">If you’re thinking of taking a break from work to look after someone</span>
+          <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+        </a>
+      </div>
+      <img class="job-help-page2-image-one" src="/public/images/jobHelpSignpostImage1.png" alt="">
+    </div>
+  </div>
+  <!-- Section 2 -->
+  <div class="background-white-two">
+    <div class="center-content">
+      
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+<img class="job-help-footer" src="/public/images/jobHelpFooter.png" alt="">
+{% endblock %}
+
+{% set mainClasses = "custom-main-2" %}
+{% set containerClasses = "custom-container-2" %}

@@ -1,0 +1,242 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">Care Choices</h1>
+
+    <p class="govuk-body">
+      If you are starting to look after a family member or a friend because they are ill, they are an older person or they are disabled, there are resources to support you.
+    </p>
+
+    <p class="govuk-body">
+      This page guides you through the support that's there for you and the person you care for. You may also find this page useful for planning ahead, if you think you might be regularly caring for someone in the future.
+    </p>
+
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Your options and available support for arranging care
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+            There are different options for arranging care, that you, the person you care for, and others involved, may consider based on the care needs and individual circumstances. 
+          </div>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+          <h3 class="govuk-heading-s">Care support, services and equipment</h3>
+
+          <p class="govuk-body">
+            There are ways to get professional care services and other types of support, which may include services and support funded by local authority, paid care and NHS-funded care.
+          </p>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/help-from-social-services-and-charities/getting-a-needs-assessment/" rel="noreferrer noopener" target="_blank">NHS information on care needs assessment</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-after-a-hospital-stay/care-after-illness-or-hospital-discharge-reablement/" rel="noreferrer noopener" target="_blank">NHS care after illness or hospital discharge</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-continuing-healthcare/" rel="noreferrer noopener" target="_blank">NHS continuing care</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/homecare/" rel="noreferrer noopener" target="_blank">NHS information on getting help at home from a paid carer</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/care-homes/" rel="noreferrer noopener" target="_blank">NHS information on care homes</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-funded-nursing-care/" rel="noreferrer noopener" target="_blank">NHS-funded nursing care</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/home-adaptations/" rel="noreferrer noopener" target="_blank">NHS information about home adaptations and home assessment</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/household-gadgets-and-equipment-to-make-life-easier/" rel="noreferrer noopener" target="_blank">NHS information about household gadgets and equipment</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/personal-alarms-security-systems-and-keysafes/" rel="noreferrer noopener" target="_blank">NHS information about personal alarms, monitoring systems and key safes</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/walking-aids-wheelchairs-and-mobility-scooters/" rel="noreferrer noopener" target="_blank">NHS information about mobility equipment</a>
+            </li>
+          </ul>
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+          <h3 class="govuk-heading-s">Planning and coordinating care</h3>
+      
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/practical-tips-if-you-care-for-someone/sharing-your-home-advice-for-carers/" rel="noreferrer noopener" target="_blank">NHS advice for carers on sharing your home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+              If you are working and caring for someone
+            </span>
+          </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+            If you are working and caring for someone, you may find it helpful to understand your employment rights and discuss your options and workplace policies with your employer.
+          </div>
+        </div>
+        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+          <h3 class="govuk-heading-s">Understanding your rights and options at work</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/time-off-for-dependants" rel="noreferrer noopener" target="_blank">Time off for family and dependants</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/flexible-working" rel="noreferrer noopener" target="_blank">Flexible working</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.citizensadvice.org.uk/work/time-off-work/time-off-work-overview/" rel="noreferrer noopener" target="_blank">Learn more about taking time off work on Citizens Advice website</a>
+            </li>
+          </ul>
+
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+          <h3 class="govuk-heading-s">Planning and preparing for the future</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://nationalcareers.service.gov.uk/" rel="noreferrer noopener" target="_blank">Get personalised careers advice and information from the National Careers Service</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-returning-to-work/" rel="noreferrer noopener" target="_blank">Carers UK advice and guidance on returning to work</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/work-and-career/thinking-of-leaving-work/" rel="noreferrer noopener" target="_blank">Carers UK advice and guidance on what to consider before leaving work</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/financial-support/benefits-for-carers-who-are-working-age/planning-ahead-pension-help/" rel="noreferrer noopener" target="_blank">Carers UK guidance on planning ahead and pension information</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+              Support for yourself
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+          <h3 class="govuk-heading-s">Practical support</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://carers.org/getting-a-break/getting-a-break" rel="noreferrer noopener" target="_blank">NHS information on Carer's assessments</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://carers.org/help-and-info/introduction" rel="noreferrer noopener" target="_blank">Find local carer support on the Carers Trust website</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://forum.carersuk.org/" rel="noreferrer noopener" target="_blank">Carers UK online community</a>
+            </li>
+            </li>
+          </ul>
+
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+          <h3 class="govuk-heading-s">Supporting your wellbeing</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/support-and-benefits-for-carers/carer-breaks-and-respite-care/" rel="noreferrer noopener" target="_blank">NHS information on arranging breaks and respite care</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://carers.org/getting-a-break/getting-a-break" rel="noreferrer noopener" target="_blank">Carers Trust information on getting a break</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/" rel="noreferrer noopener" target="_blank">Carers UK tips for looking after yourself</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/covid-19-guidance/emotional-support/" rel="noreferrer noopener" target="_blank">Carers UK tips for emotional wellbeing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+              Financial support
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+          <h3 class="govuk-heading-s">Managing your finances</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/help-nhs-costs" rel="noreferrer noopener" target="_blank">Check what help you can get with NHS prescriptions and health costs</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/financial-support/help-with-bills-and-household-costs/" rel="noreferrer noopener" target="_blank">Carers UK guidance on managing household costs</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.citizensadvice.org.uk/debt-and-money/budgeting/budgeting/work-out-your-budget/" rel="noreferrer noopener" target="_blank">Get support with making a budget on the Citizen's Advice website</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.moneyhelper.org.uk/en" rel="noreferrer noopener" target="_blank">MoneyHelper financial advice</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/pay-off-debts" rel="noreferrer noopener" target="_blank">Find out your options for dealing with debts</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-cope-with-financial-worries/" rel="noreferrer noopener" target="_blank">NHS advise on coping with financial worries</a>
+            </li>
+          </ul>
+
+          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+          <h3 class="govuk-heading-s">Benefits</h3>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/benefits-calculators" rel="noreferrer noopener" target="_blank">Benefits calculators</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/check-benefits-financial-support" rel="noreferrer noopener" target="_blank">Check benefits and financial support you can get</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/carers-allowance" rel="noreferrer noopener" target="_blank">Carer's Allowance</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/carers-credit" rel="noreferrer noopener" target="_blank">Carer's Credit</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/universal-credit" rel="noreferrer noopener" target="_blank">Universal Credit</a>
+            </li>
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/pension-credit" rel="noreferrer noopener" target="_blank">Pension Credit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

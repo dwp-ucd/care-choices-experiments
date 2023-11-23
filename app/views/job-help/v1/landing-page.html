@@ -1,0 +1,236 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block header %}
+  <div class="job-help-header">
+    <img class="job-help-header-image" src="/public/images/jobHelpHeaderLogo.png" alt="UK Government Icon">
+    <a href="#" class="job-help-header-text">Cymraeg</a>
+  </div>
+  <header class="job-help-subheader">
+    <div class="job-help-subheader-section">
+      <a class="no-style-link" href="./landing-page.html"><img class="job-help-subheader-image" src="/public/images/jobHelpSubHeaderLogo.png" alt="Job Help Icon"></a>
+      <input type="text" id="search" name="search" class="job-help-subheader-search" placeholder="Eg. Job Opportunities">
+      <label class="govuk-visually-hidden" for="search">
+        Search
+      </label>
+      <button class="job-help-subheader-button">
+        Search
+      </button>
+    </div>
+    <div class="job-help-subheader-section-2">
+      <a href="#" class="job-help-subheader-text">Improve my job chances</a>
+      <a href="#" class="job-help-subheader-text">Can’t work full time?</a>
+      <a href="#" class="job-help-subheader-text">Find a job</a>
+      <a href="#" class="job-help-subheader-text">Benefits and other help</a>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+  <div class="background-blue-one">
+    <div class="center-content">
+      <!-- Content -->
+      <div class="section-one-content">
+        <div class="section-one-content-1">
+          <img class="section-one-heading-one" src="/public/images/jobHelpLandingHeadingOne.png" alt="">
+          <img class="section-one-heading-one-2" src="/public/images/jobHelpLandingHeadingOne2.png" alt="">
+          <p class="job-help-text-white">Tell us what kind of help you would like:</p>
+          <div class="job-help-linknav">
+            <a class="job-help-linknav-anchor no-style-link" href="">
+              <span class="job-help-linknav-text">I want to improve my chances of getting a job</span>
+              <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+            </a>
+            <a class="job-help-linknav-anchor no-style-link" href="">
+              <span class="job-help-linknav-text">I can’t work full time and I want to know what my options are</span>
+              <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+            </a>
+            <a class="job-help-linknav-anchor no-style-link" href="">
+              <span class="job-help-linknav-text">I want to see what jobs are available now</span>
+              <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+            </a>
+            <a class="job-help-linknav-anchor no-style-link" href="">
+              <span class="job-help-linknav-text">I want to learn about support that might be available to me</span>
+              <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+            </a>
+            <a class="job-help-linknav-anchor no-style-link" href="./help-for-helpers.html">
+              <span class="job-help-linknav-text">I want to learn about managing work while taking care of someone</span>
+              <span class="job-help-linknav-arrowbox"><img class="job-help-linknav-arrow" src="/public/images/jobHelpArrow.png" alt=""></span>
+            </a>
+          </div>
+        </div>
+        <div class="section-one-content-2">
+          <img class="section-one-heading-two" src="/public/images/jobHelpLandingHeadingTwo.png" alt="">
+          <p class="job-help-text-white">
+            Are you out of work, facing redundancy or looking to start jobseeking again? Whether you want to gain new skills, check what support is out there, or find out what jobs are 
+            available, we can help you get started.
+          </p>
+          <img class="section-one-button" src="/public/images/jobHelpButton.png" alt="">
+        </div>
+      </div>
+      <!-- Images -->
+      <div class="section-one-images">
+        <img class="section-one-image-one" src="/public/images/jobHelpLandingImageOne.png" alt="">
+        <img class="section-one-image-two" src="/public/images/jobHelpLandingImageTwo.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Section 2 -->
+  <div class="background-white-one">
+    <div class="center-content">
+      <div class="section-two-padding">
+        <img class="section-two-heading-one" src="/public/images/jobHelpLandingHeadingThree.png" alt="">
+        <p class="job-help-text-black">
+          Not sure where to start with your job search? Follow four easy steps to improve your chances of finding work.
+        </p>
+        <p class="job-help-text-black">
+          If you live in Northern Ireland, <a href="#">visit NI Direct (external website)</a>.
+        </p>
+        <img class="section-two-button" src="/public/images/jobHelpButton2.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Section 3 -->
+  <div class="background-blue-two">
+    <div class="center-content">
+      <img class="section-three-image-three" src="/public/images/jobHelpLandingImageThree.png" alt="">
+      <div class="job-help-signpost-container">
+        <!-- Signpost 1 -->
+        <a class="no-style-link" href="#">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">50 Plus?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                There’s additional support available if you’re looking for work.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+        <!-- Signpost 2 -->
+        <a class="no-style-link" href="#">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">Want to start job seeking again?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                If you had stopped looking for work but would like to get back into it, help is available. Read our advice to get your job search started again.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+        <!-- Signpost 3 -->
+        <a class="no-style-link" href="#">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">Do you have a disability or health condition?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                Find out about the additional support that can help you find a job and fulfil your potential.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+        <!-- Signpost 4 -->
+        <a class="no-style-link" href="#">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">Already working but want more?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                Help is at hand if you are working but would like to be promoted or earn more.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+        <!-- Signpost 5 -->
+        <a class="no-style-link" href="#">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">Balancing work and childcare?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                Read about the options that could help as you juggle childcare and returning to work.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+        <!-- Signpost 6 -->
+        <a class="no-style-link" href="./help-for-helpers.html">
+          <article class="job-help-signpost-box">
+            <div class="job-help-signpost-content">
+              <h2 class="job-help-signpost-title">Do you regularly look after somebody?</h2>
+              <p class="job-help-text-white govuk-!-margin-bottom-0">
+                Find out about support for managing working and unpaid care.
+              </p>
+            </div>
+            <div class="job-help-signpost-link">
+              <div class="job-help-signpost-link-text">
+                <p class="job-help-text-yellow govuk-!-margin-bottom-0">
+                  Learn more
+                </p>
+              </div>
+              <div class="job-help-signpost-link-icon">
+                <img class="job-help-signpost-arrow" src="/public/images/signpostArrowThree.png" alt="">
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+<img class="job-help-footer" src="/public/images/jobHelpFooter.png" alt="">
+{% endblock %}
+
+{% set mainClasses = "custom-main-2" %}
+{% set containerClasses = "custom-container-2" %}

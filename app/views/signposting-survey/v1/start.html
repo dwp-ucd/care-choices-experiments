@@ -1,0 +1,61 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">
+      {{ serviceName }}
+    </h1>
+
+    <p class="govuk-body">
+      Vestibulum dolor eros, vestibulum vitae pellentesque eu, consectetur vitae urna. Ut non lacus lacus. Etiam tristique enim nisl, non mattis ante tincidunt at. Interdum et malesuada 
+      fames ac ante ipsum primis in faucibus. Nunc dictum faucibus hendrerit. Vivamus nec ante lacus. Nam sed massa lorem. Pellentesque et auctor sem.
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Preset options
+    </h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Financial</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Health & Wellbeing</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Carer help</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">More</a>
+      </li>
+    </ul>
+
+    <h1 class="govuk-heading-l">
+      Before you start
+    </h1>
+
+    <p class="govuk-body">
+      Nam et malesuada risus. Nullam a egestas magna. Fusce nec malesuada nulla, ut eleifend urna. Vestibulum pellentesque sit amet nunc eget iaculis.
+    </p>
+
+    <p class="govuk-body">
+      Mauris sed libero laoreet, consectetur diam id, tincidunt mauris. Mauris vel iaculis turpis, quis eleifend nunc. In hac habitasse platea dictumst. Phasellus at nulla justo.
+    </p>
+
+    <a class="govuk-button" href="./questionOne.html" data-module="govuk-button">
+      Start
+    </a>
+  </div>
+</div>
+
+{% endblock %}

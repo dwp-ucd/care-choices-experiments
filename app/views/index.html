@@ -1,0 +1,59 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">
+      Care Choices Prototypes
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      High Fidelity
+    </h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./campaign-site/campaign-site.html">Campaign Site</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./job-help/job-help.html">Job Help</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./signposting-external/signposting.html">Signposting</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./signposting-accordion/signposting.html">Signposting (Accordion)</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./signposting-flat-content/signposting.html">Signposting (Flat content)</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./signposting-survey/signposting.html">Signposting (Survey)</a>
+      </li>
+    </ul>
+
+    <h2 class="govuk-heading-l">
+      Low Fidelity
+    </h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./checklist/checklist.html">Checklist</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./Posters/Posters.html">Posters</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

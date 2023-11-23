@@ -1,0 +1,71 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">Support for yourself</h1>
+
+    <h2 class="govuk-heading-m">Practical support</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://carers.org/getting-a-break/getting-a-break" rel="noreferrer noopener" target="_blank">NHS information on Carer's assessments</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://carers.org/help-and-info/introduction" rel="noreferrer noopener" target="_blank">Find local carer support on the Carers Trust website</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://forum.carersuk.org/" rel="noreferrer noopener" target="_blank">Carers UK online community</a>
+      </li>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Supporting your wellbeing</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/support-and-benefits-for-carers/carer-breaks-and-respite-care/" rel="noreferrer noopener" target="_blank">NHS information on arranging breaks and respite care</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://carers.org/getting-a-break/getting-a-break" rel="noreferrer noopener" target="_blank">Carers Trust information on getting a break</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/your-health-and-wellbeing/" rel="noreferrer noopener" target="_blank">Carers UK tips for looking after yourself</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/covid-19-guidance/emotional-support/" rel="noreferrer noopener" target="_blank">Carers UK tips for emotional wellbeing</a>
+      </li>
+    </ul>
+
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Email content
+    </button>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./benefits-financial.html">Financial Support</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./working-and-caring.html">If you are working and caring for someone</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./carer-options.html">Your options and available support for arranging care</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

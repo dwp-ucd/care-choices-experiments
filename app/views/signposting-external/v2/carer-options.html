@@ -1,0 +1,94 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">Your options and available support for arranging care</h1>
+
+    <p class="govuk-body">
+      There are different options for arranging care, that you, the person you care for, and others involved, may consider based on the care needs and 
+      individual circumstances. 
+    </p>
+
+    <h2 class="govuk-heading-m">Care support, services and equipment</h2>
+
+    <p class="govuk-body">
+      There are ways to get professional care services and other types of support, which may include services and support funded by local authority, 
+      paid care and NHS-funded care.  
+    </p>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/help-from-social-services-and-charities/getting-a-needs-assessment/" rel="noreferrer noopener" target="_blank">NHS information on care needs assessment</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-after-a-hospital-stay/care-after-illness-or-hospital-discharge-reablement/" rel="noreferrer noopener" target="_blank">NHS care after illness or hospital discharge</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-continuing-healthcare/" rel="noreferrer noopener" target="_blank">NHS continuing care</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/homecare/" rel="noreferrer noopener" target="_blank">NHS information on getting help at home from a paid carer</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/care-homes/" rel="noreferrer noopener" target="_blank">NHS information on care homes</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-funded-nursing-care/" rel="noreferrer noopener" target="_blank">NHS-funded nursing care</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/home-adaptations/" rel="noreferrer noopener" target="_blank">NHS information about home adaptations and home assessment</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/household-gadgets-and-equipment-to-make-life-easier/" rel="noreferrer noopener" target="_blank">NHS information about household gadgets and equipment</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/personal-alarms-security-systems-and-keysafes/" rel="noreferrer noopener" target="_blank">NHS information about personal alarms, monitoring systems and key safes</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/walking-aids-wheelchairs-and-mobility-scooters/" rel="noreferrer noopener" target="_blank">NHS information about mobility equipment</a>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Planning and coordinating care</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/conditions/social-care-and-support-guide/practical-tips-if-you-care-for-someone/sharing-your-home-advice-for-carers/" rel="noreferrer noopener" target="_blank">NHS advice for carers on sharing your home</a>
+      </li>
+    </ul>
+
+    <br />
+
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Email content
+    </button>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./benefits-financial.html">Financial Support</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./other-support.html">Support for yourself</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./working-and-caring.html">If you are working and caring for someone</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

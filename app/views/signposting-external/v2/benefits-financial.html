@@ -1,0 +1,87 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- Link to management -->
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
+
+    <h1 class="govuk-heading-l">Benefits and Financial Support</h1>
+
+    <h2 class="govuk-heading-m">Managing your finances</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/help-nhs-costs" rel="noreferrer noopener" target="_blank">Check what help you can get with NHS prescriptions and health costs</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.carersuk.org/help-and-advice/financial-support/help-with-bills-and-household-costs/" rel="noreferrer noopener" target="_blank">Carers UK guidance on managing household costs</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.citizensadvice.org.uk/debt-and-money/budgeting/budgeting/work-out-your-budget/" rel="noreferrer noopener" target="_blank">Get support with making a budget on the Citizen's Advice website</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.moneyhelper.org.uk/en" rel="noreferrer noopener" target="_blank">MoneyHelper financial advice</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/pay-off-debts" rel="noreferrer noopener" target="_blank">Find out your options for dealing with debts</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-cope-with-financial-worries/" rel="noreferrer noopener" target="_blank">NHS advise on coping with financial worries</a>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Benefits</h2>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/benefits-calculators" rel="noreferrer noopener" target="_blank">Benefits calculators</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/check-benefits-financial-support" rel="noreferrer noopener" target="_blank">Check benefits and financial support you can get</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/carers-allowance" rel="noreferrer noopener" target="_blank">Carer's Allowance</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/carers-credit" rel="noreferrer noopener" target="_blank">Carer's Credit</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/universal-credit" rel="noreferrer noopener" target="_blank">Universal Credit</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://www.gov.uk/pension-credit" rel="noreferrer noopener" target="_blank">Pension Credit</a>
+      </li>
+    </ul>
+    
+    <br />
+
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Email content
+    </button>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Related content</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./other-support.html">Support for yourself</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./working-and-caring.html">If you are working and caring for someone</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="./carer-options.html">Your options and available support for arranging care</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

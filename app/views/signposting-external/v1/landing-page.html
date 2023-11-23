@@ -1,0 +1,43 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Care Choices</h1>
+
+    <p class="govuk-body">
+      If you are starting to look after a family member or a friend because they are ill, they are an older person or they are disabled, there are resources to support you.
+    </p>
+
+    <p class="govuk-body">
+      This page guides you through the support that's there for you and the person you care for. You may also find this page useful for planning ahead, if you think you might be 
+      regularly caring for someone in the future.
+    </p>
+
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="./arranging-care.html">Your options and available support for arranging care</a>
+      </li>
+      <br />
+      <li>
+        <a class="govuk-link" href="./working-caring.html">If you are working and caring for someone</a>
+      </li>
+      <br />
+      <li>
+        <a class="govuk-link" href="./other-support.html">Support for yourself</a>
+      </li>
+      <br />
+      <li>
+        <a class="govuk-link" href="./financial.html">Financial support</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

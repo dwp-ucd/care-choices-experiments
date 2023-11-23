@@ -1,0 +1,936 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add extra styles here
+
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+#pannel-1 {
+    padding-bottom: 30px;
+}
+
+#pannel-2 {
+    padding-bottom: 30px;
+}
+
+#pannel-3 {
+    padding-bottom: 30px;
+}
+
+#pannel-4 {
+    padding-bottom: 30px;
+}
+
+.header-v2 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.govuk {
+    &-signpost-box {
+        border: 1px solid  	#505a5f;
+        border-top: 5px solid #1d70b8;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    &-header-custom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        &::after {
+            display: none;
+        }
+        &-lang {
+            display: flex;
+            align-items: center;
+            &-text {
+                &:link {
+                    color: white;
+                }
+                &:visited {
+                    color: white;
+                }
+                &:focus {
+                    color: black;
+                }
+            }
+        }
+    }
+    &-subheader {
+        padding: 10px 0;
+        background-color: #F3F2F1;
+        &-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-links {
+            width: 200px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        &-links-v2 {
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-custom-link {
+            font-weight: 700;
+            white-space: nowrap;
+            &:link {
+                color: black;
+            }
+            &:visited {
+                color: black;
+            }
+        }
+    }
+}
+
+.search-bar {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+    padding-left: 35px;
+    width: 40%;
+}
+
+.background-colour {
+    background-color: #FED000;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+.background-colour-2 {
+    background-color: #6CC0EF;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+.custom-main {
+    padding: 0;
+}
+
+.custom-main-2 {
+    padding: 0;
+}
+
+.custom-container-2 {
+    margin: 0;
+    max-width: 100%;
+}
+
+.border-none {
+    border: none;
+}
+
+.button {
+    border: 2px solid;
+    box-shadow: none;
+    &--yellow {
+        background-color: #FED000;
+        color: black;
+        &:hover {
+            background-color: #FFDB39;
+            color: black;
+        }
+        &:visited {
+            background-color: #FFDB39;
+            color: black;
+        }
+    }
+    &:focus {
+        border: 2px solid white;
+    }
+}
+
+.video-frame {
+    width: 100%;
+    height: 500px;
+}
+
+.banner {
+    &-content {
+        display: flex;
+        align-items: center;
+    }
+    &-image {
+        height: 300px;
+    }
+}
+
+.topic {
+    &-banner {
+        &-image {
+            height: 180px;
+        }
+    }
+}
+
+.signpost {
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(241px, 3fr));
+    }
+    &-title {
+        text-align: center;
+    }
+    &-icon {
+        height: 150px;
+    }
+    &-box {
+        border: 4px solid;
+        width: 290px;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-5px);
+            background-color: #FFDB39;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+    &-link {
+        border-top: 4px solid;
+        display: flex;
+        background-color: #6CC0EF;
+        height: 50px;
+        &-text {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        &-icon {
+            border-left: 4px solid;
+            display: flex;
+            align-items: center;
+            width: 18%;
+        }
+    }
+    &-arrow {
+        height: 40px;
+        margin: 0 auto;
+    }
+}
+
+.question-mark {
+    height: 230px;
+}
+
+.no-style-link {
+    text-decoration: inherit;
+    color: inherit;
+    &:link {
+        color: black;
+    }
+    &:visited {
+        color: black;
+    }
+    &:focus {
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.pannel-4-container {
+    display: flex;
+    justify-content: space-between;
+    &-content {
+        width: 70%;
+    }
+    &-icon {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.quote-wrapper {
+    width: 180px;
+    height: 180px;
+    line-height: 200px;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    background: #6CC0EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.govuk-pagination--block {
+    display: block;
+}
+
+.govuk-pagination {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.govuk-pagination__item, .govuk-pagination__next, .govuk-pagination__prev {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.3157894737;
+    box-sizing: border-box;
+    position: relative;
+    min-width: 45px;
+    min-height: 45px;
+    padding: 10px 15px;
+    float: left;
+}
+
+.govuk-pagination--block .govuk-pagination__next, .govuk-pagination--block .govuk-pagination__prev {
+    padding-left: 0;
+    float: none;
+}
+
+
+@media (max-width: 670px) {
+    .signpost-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .signpost {
+        &-box {
+            height: 400px;
+        }
+        &-icon {
+            height: 100px;
+        }
+    }
+    .pannel-4-container {
+        &-content {
+            width: 100%;
+        }
+        &-icon {
+            display: none;
+        }
+    }
+    .signpost-content .govuk-heading-m {
+        font-size: 18px;
+    }
+    .signpost-content .govuk-body {
+        font-size: 16px;
+    }
+    .user-quote-image {
+        height: 80px !important;
+    }
+    .qoute-text {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 580px) {
+    .quote-wrapper {
+        width: 140px;
+        height: 140px;
+        line-height: 200px;
+    }
+    .govuk-subheader {
+        &-links {
+            display: none;
+        }
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .video-frame {
+        height: 400px;
+    }
+    .question-mark {
+        height: 150px;
+    }
+    .banner {
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+        &-image {
+            height: 150px;
+        }
+    }
+    .topic {
+        &-banner {
+            &-image {
+                height: 130px;
+            }
+        }
+    }
+}
+
+.link-box {
+    border: 4px solid;
+    border-top: 10px solid;
+    margin-bottom: 35px;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    &-content {
+        padding: 20px;
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #6CC0EF;
+        border-top: 4px solid;
+        &-text {
+            padding-left: 20px;
+        }
+    }
+    &-icon {
+        display: flex;
+        border-left: 4px solid;
+        width: 50px;
+        justify-content: center;
+    }
+}
+
+.user-quote {
+    &-box {
+        display: flex;
+        margin-bottom: 40px;
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding-left: 12px;
+    }
+    &-image {
+        height: 150px;
+        &-box {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// Job help
+
+.background-blue-one {
+    background-color: #0f6274;
+    padding-top: 100px;
+    height: 1160px;
+}
+.background-blue-two {
+    background-color: #0f6274;
+    padding-top: 100px;
+    height: 1160px;
+}
+.background-blue-three {
+    background-color: #0f6274;
+    padding-top: 80px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.background-blue-four {
+    background-color: #0f6274;
+    padding-top: 65px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.background-blue-five {
+    background-color: #0f6274;
+    padding-top: 65px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.background-blue-six {
+    background-color: #0f6274;
+    padding-top: 65px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+.background-white-one {
+    background-color: #fcf8f2;
+    padding-top: 200px;
+    height: 350px;
+}
+.background-white-two {
+    background-color: #fcf8f2;
+    padding-top: 200px;
+    height: 100px;
+}
+.background-white-three {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 1240px;
+}
+.background-white-four {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 850px;
+}
+.background-white-five {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 1600px;
+}
+.background-white-six {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 510px;
+}
+.background-white-seven {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 570px;
+}
+.background-white-eight {
+    background-color: #fcf8f2;
+    padding-top: 50px;
+    height: 320px;
+}
+.center-content {
+    display: flex;
+    padding: 0 289px;
+}
+
+.section-one {
+    &-content {
+        width: 50%;
+        &-2 {
+            margin-top: 300px;
+        }
+    }
+    &-images {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    &-image-one {
+        height: 600px;
+        position: absolute;
+        top: 200px;
+        left: 1020px;
+    }
+    &-image-two {
+        height: 600px;
+        position: absolute;
+        top: 900px;
+        left: 1020px;
+    }
+    &-heading-one {
+        display: block;
+        height: 170px;
+        padding-bottom: 20px;
+    }
+    &-heading-one-2 {
+        display: none;
+    }
+    &-heading-two {
+        height: 122px;
+        padding-bottom: 20px;
+    }
+    &-button {
+        height: 56px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+}
+
+.section-two {
+    &-heading-one {
+        height: 25px;
+        padding-bottom: 25px;
+    }
+    &-padding {
+        padding-left: 300px;
+    }
+    &-button {
+        height: 56px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+.section-three {
+    &-image-three {
+        width: 70%;
+        position: absolute;
+        top: 1890px;
+    }
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.job-help {
+    &-h1 {
+        color: #000;
+        font-size: 26px;
+        font-weight: 900;
+        font-family: futura-pt-condensed,sans-serif;
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
+    &-h2 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 900;
+        font-family: futura-pt-condensed,sans-serif;
+        text-transform: uppercase;
+    }
+    &-topic-title-s {
+        display: block;
+        height: 85px;
+        padding-bottom: 25px;
+        width: 550px;
+    }
+    &-topic-title {
+        display: block;
+        height: 140px;
+        padding-bottom: 25px;
+        width: 600px;
+    }
+    &-topic-title-l {
+        display: block;
+        height: 150px;
+        padding-bottom: 25px;
+        width: 600px;
+    }
+    &-topic-title-xl {
+        display: block;
+        height: 180px;
+        padding-bottom: 25px;
+        width: 600px;
+    }
+    &-helpers-back {
+        background-color: #0f6274;
+        padding-top: 15px;
+    }
+    &-back-link{
+        color: #fff;
+        text-decoration: none;
+        &:visited {
+            color: #fff;
+        }
+        &:focus {
+            color: #000;
+        }
+    }
+    &-signpost {
+        &-container {
+            margin-top: 420px;
+            display: flex;
+            gap: 22px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid;
+            margin-bottom: 15px;
+            background-color: #187387;
+            width: 313px;
+            height: 296px;
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+        &-content {
+            padding: 20px;
+        }
+        &-title {
+            color: #fff971;
+            font-size: 22px;
+            font-weight: 900;
+            font-family: futura-pt-condensed,sans-serif;
+            text-transform: uppercase;
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #187387;
+            border-top: 1px solid;
+            &-text {
+                padding-left: 20px;
+            }
+            &-icon {
+                display: flex;
+                border-left: 1px solid;
+                width: 50px;
+                height: 41px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &-arrow {
+            height: 12px;
+        }
+    }
+    &-header {
+        height: 60px;
+        background-color: rgb(0, 6, 24);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 289px;
+        &-image {
+            height: 30px;
+        }
+        &-text {
+            font-size: 14px;
+            color: #fff !important;
+            text-decoration: none;
+        }
+    }
+    &-subheader {
+        height: 92px;
+        background-color: #0f6274;
+        border-bottom: 1px solid #00404e;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 289px;
+        &-section {
+            display: flex;
+            align-items: center;
+        }
+        &-section-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 540px;
+        }
+        &-image {
+            height: 56px;
+        }
+        &-text {
+            font-size: 14px;
+            color: #fff !important;
+            text-decoration: none;
+        }
+        &-search {
+            width: 268px;
+            height: 38px;
+            font-size: 11px;
+            margin-left: 15px;
+            background-color: #fff;
+            border: 0;
+            padding-left: 10px;
+        }
+        &-button {
+            height: 40px;
+            width: 85px;
+            font-size: 11px;
+            background-color: #a4ffff;
+            color: #131313;
+            border-radius: 1px;
+            border: 0;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    &-linknav {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        &-anchor {
+            display: flex;
+            border: 1px solid #000;
+            border-bottom: none;
+            background-color: #177387;
+            text-decoration: none;
+            align-items: center;
+            &:visited {
+                color: #fff;
+            }
+            &:hover {
+                background-color: #fff;
+                color: #000;
+                box-shadow: 0 14px 28px rgba(0,0,0,.1),0 10px 10px rgba(0,0,0,.08);
+            }
+        }
+        &-text {
+            width: 86%;
+            margin-left: 24px;
+            font-size: 18px;
+            border-right: 1px solid #000;
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+        &-arrowbox {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        &-arrow {
+            height: 20px;
+        }
+    }
+    &-text-white {
+        font-size: 16px;
+        color: #fff;
+        &-bold {
+            font-weight: bold;
+        }
+    }
+    &-text-black {
+        font-size: 16px;
+        color: #000;
+    }
+    &-bold {
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+    }
+    &-text-yellow {
+        font-size: 16px;
+        color: #fff971;
+    }
+    &-footer {
+        width: 100%;
+    }
+    &-page2 {
+        &-heading-one {
+            display: block;
+            height: 115px;
+            padding-bottom: 25px;
+            width: 560px;
+        }
+        &-image-one {
+            height: 400px;
+            position: absolute;
+            width: 56%;
+            top: 1100px;
+        }
+        &-center-content {
+            padding: 0px 520px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 1665px) {
+    .background-blue-one {
+        height: 860px;
+    }
+    .job-help-header {
+        padding: 0 35px;
+    }
+    .job-help-subheader {
+        padding: 0 35px;
+    }
+    .section-one-image-one {
+        display: none;
+    }
+    .section-one-image-two {
+        display: none;
+    }
+    .center-content {
+        padding: 0 35px;
+        flex-direction: column;
+    }
+    .job-help-linknav {
+        width: 100%;
+    }
+    .job-help-linknav-arrowbox {
+        width: 5%;
+    }
+    .job-help-linknav-text {
+        width: 95%;
+    }
+    .job-help-helpers-back {
+        background-color: #0f6274;
+        padding-top: 15px;
+    }
+    .background-white-one {
+        padding-top: 70px;
+    }
+    .section-two-padding {
+        padding-left: 0;
+    }
+    .job-help-page2-image-one {
+        display: none;
+    }
+    .section-three-image-three {
+        display: none;
+    }
+    .job-help-signpost-container {
+        margin-top: 0;
+    }
+    .background-blue-two {
+        height: 700px;
+    }
+    .background-blue-three {
+        height: 850px;
+    }
+    .background-white-two {
+        display: none;
+    }
+    .job-help-page2-center-content {
+        padding: 0 35px;
+    }
+    .section-one {
+        &-content {
+            width: 100%;
+            &-2 {
+                margin-top: 100px;
+            }
+        }
+        &-heading-one {
+            display: none;
+        }
+        &-heading-one-2 {
+            display: block;
+            height: 145px;
+            padding-bottom: 35px;
+        }
+    }
+}
+
+@media (max-width: 1665px) {
+    .background-blue-three {
+        height: 950px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .job-help-subheader-text {
+        display: none;
+    }
+    .job-help-footer {
+        display: none;
+    }
+}
